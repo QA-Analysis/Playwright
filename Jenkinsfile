@@ -1,7 +1,7 @@
  pipeline {
   agent { 
     docker { 
-     pull mcr.microsoft.com/playwright:v1.22.0-focal
+     docker run -it --rm --ipc=host mcr.microsoft.com/playwright:v1.22.0-focal /bin/bash
     }
   }
   stages {
