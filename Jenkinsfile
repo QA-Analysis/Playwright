@@ -1,8 +1,8 @@
 pipeline {
    
     docker { 
-     
-      docker run -it --rm --ipc=host mcr.microsoft.com/playwright:v1.22.0-focal /bin/bash
+      docker pull mcr.microsoft.com/playwright
+      
     } 
   
   stages {
